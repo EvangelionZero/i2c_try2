@@ -1,0 +1,27 @@
+
+State Machine - |i2c_try2|i2c_state
+Name i2c_state.state_bit_1 i2c_state.state_bit_0 
+i2c_state.t_slave_addr 0 0 
+i2c_state.command 0 1 
+i2c_state.data_to_port 1 0 
+
+State Machine - |i2c_try2|i2c_substate
+Name i2c_substate.state_bit_3 i2c_substate.state_bit_2 i2c_substate.state_bit_1 i2c_substate.state_bit_0 
+i2c_substate.start 0 0 0 0 
+i2c_substate.first 0 0 1 1 
+i2c_substate.second 0 1 1 1 
+i2c_substate.third 0 1 0 1 
+i2c_substate.fourth 0 1 0 0 
+i2c_substate.fifth 0 1 1 0 
+i2c_substate.sixth 1 0 0 0 
+i2c_substate.seventh 1 0 0 1 
+i2c_substate.eighth 1 0 1 0 
+i2c_substate.ack 0 0 0 1 
+i2c_substate.stop 0 0 1 0 
+
+State Machine - |i2c_try2|bit_cycle_cnt
+Name bit_cycle_cnt.state_bit_1 bit_cycle_cnt.state_bit_0 
+bit_cycle_cnt.one 0 0 
+bit_cycle_cnt.two 0 1 
+bit_cycle_cnt.three 1 0 
+bit_cycle_cnt.four 1 1 
