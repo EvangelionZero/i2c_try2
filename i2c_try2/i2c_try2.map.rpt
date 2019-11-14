@@ -1,5 +1,5 @@
 Analysis & Synthesis report for i2c_try2
-Thu Nov 07 21:41:30 2019
+Thu Nov 14 17:49:53 2019
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -17,12 +17,10 @@ Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
   9. State Machine - |i2c_try2|i2c_substate
  10. State Machine - |i2c_try2|bit_cycle_cnt
  11. Registers Removed During Synthesis
- 12. Source assignments for lpm_counter:button_cnt_rtl_0
- 13. Source assignments for lpm_counter:en_wr_cnt_rtl_1
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |i2c_try2
- 15. Parameter Settings for Inferred Entity Instance: lpm_counter:button_cnt_rtl_0
- 16. Parameter Settings for Inferred Entity Instance: lpm_counter:en_wr_cnt_rtl_1
- 17. Analysis & Synthesis Messages
+ 12. Source assignments for lpm_counter:en_wr_cnt_rtl_0
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |i2c_try2
+ 14. Parameter Settings for Inferred Entity Instance: lpm_counter:en_wr_cnt_rtl_0
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +46,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Nov 07 21:41:30 2019    ;
+; Analysis & Synthesis Status ; Successful - Thu Nov 14 17:49:53 2019    ;
 ; Quartus II 64-Bit Version   ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; i2c_try2                                 ;
 ; Top-level Entity Name       ; i2c_try2                                 ;
 ; Family                      ; MAX7000S                                 ;
-; Total macrocells            ; 51                                       ;
-; Total pins                  ; 10                                       ;
+; Total macrocells            ; 42                                       ;
+; Total pins                  ; 12                                       ;
 +-----------------------------+------------------------------------------+
 
 
@@ -139,7 +137,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
-; i2c_try2.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Sherry/Desktop/i2c_try2/i2c_try2.v                  ;
+; i2c_try2.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Sherry/Desktop/Quartus Project/i2c_try2/i2c_try2.v  ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction           ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
 
@@ -149,26 +147,25 @@ applicable agreement for further details.
 +----------------------+----------------------+
 ; Resource             ; Usage                ;
 +----------------------+----------------------+
-; Logic cells          ; 51                   ;
-; Total registers      ; 37                   ;
-; I/O pins             ; 10                   ;
+; Logic cells          ; 42                   ;
+; Total registers      ; 27                   ;
+; I/O pins             ; 12                   ;
 ; Parallel expanders   ; 11                   ;
 ; Maximum fan-out node ; rst                  ;
-; Maximum fan-out      ; 44                   ;
-; Total fan-out        ; 581                  ;
-; Average fan-out      ; 9.52                 ;
+; Maximum fan-out      ; 36                   ;
+; Total fan-out        ; 458                  ;
+; Average fan-out      ; 8.48                 ;
 +----------------------+----------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                           ;
-+-----------------------------------+------------+------+----------------------------------------+--------------+
-; Compilation Hierarchy Node        ; Macrocells ; Pins ; Full Hierarchy Name                    ; Library Name ;
-+-----------------------------------+------------+------+----------------------------------------+--------------+
-; |i2c_try2                         ; 51         ; 10   ; |i2c_try2                              ; work         ;
-;    |lpm_counter:button_cnt_rtl_0| ; 10         ; 0    ; |i2c_try2|lpm_counter:button_cnt_rtl_0 ; work         ;
-;    |lpm_counter:en_wr_cnt_rtl_1|  ; 9          ; 0    ; |i2c_try2|lpm_counter:en_wr_cnt_rtl_1  ; work         ;
-+-----------------------------------+------------+------+----------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                         ;
++----------------------------------+------------+------+---------------------------------------+--------------+
+; Compilation Hierarchy Node       ; Macrocells ; Pins ; Full Hierarchy Name                   ; Library Name ;
++----------------------------------+------------+------+---------------------------------------+--------------+
+; |i2c_try2                        ; 42         ; 12   ; |i2c_try2                             ; work         ;
+;    |lpm_counter:en_wr_cnt_rtl_0| ; 9          ; 0    ; |i2c_try2|lpm_counter:en_wr_cnt_rtl_0 ; work         ;
++----------------------------------+------------+------+---------------------------------------+--------------+
 
 
 Encoding Type:  Minimal Bits
@@ -230,19 +227,8 @@ Encoding Type:  Minimal Bits
 +---------------------------------------+--------------------+
 
 
-+-----------------------------------------------------+
-; Source assignments for lpm_counter:button_cnt_rtl_0 ;
-+---------------------------+-------+------+----------+
-; Assignment                ; Value ; From ; To       ;
-+---------------------------+-------+------+----------+
-; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -        ;
-; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -        ;
-; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -        ;
-+---------------------------+-------+------+----------+
-
-
 +----------------------------------------------------+
-; Source assignments for lpm_counter:en_wr_cnt_rtl_1 ;
+; Source assignments for lpm_counter:en_wr_cnt_rtl_0 ;
 +---------------------------+-------+------+---------+
 ; Assignment                ; Value ; From ; To      ;
 +---------------------------+-------+------+---------+
@@ -260,9 +246,9 @@ Encoding Type:  Minimal Bits
 ; button_max     ; 0111111111 ; Unsigned Binary                            ;
 ; en_wr_cnt_max  ; 0111111111 ; Unsigned Binary                            ;
 ; configure      ; 00000000   ; Unsigned Binary                            ;
-; poweron_seq1   ; 00000001   ; Unsigned Binary                            ;
-; poweron_seq2   ; 00000011   ; Unsigned Binary                            ;
-; poweron_seq3   ; 00000111   ; Unsigned Binary                            ;
+; poweron_seq1   ; 00000110   ; Unsigned Binary                            ;
+; poweron_seq2   ; 00000101   ; Unsigned Binary                            ;
+; poweron_seq3   ; 00000011   ; Unsigned Binary                            ;
 ; machine_ini    ; 0          ; Unsigned Binary                            ;
 ; machine_w      ; 1          ; Unsigned Binary                            ;
 ; t_slave_addr   ; 00         ; Unsigned Binary                            ;
@@ -287,35 +273,8 @@ Encoding Type:  Minimal Bits
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_counter:button_cnt_rtl_0 ;
-+------------------------+-------------------+----------------------------------+
-; Parameter Name         ; Value             ; Type                             ;
-+------------------------+-------------------+----------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                     ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                   ;
-; LPM_WIDTH              ; 10                ; Untyped                          ;
-; LPM_DIRECTION          ; UP                ; Untyped                          ;
-; LPM_MODULUS            ; 0                 ; Untyped                          ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                          ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                          ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                          ;
-; DEVICE_FAMILY          ; MAX7000S          ; Untyped                          ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                          ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH               ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK               ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                          ;
-; LABWIDE_SCLR           ; ON                ; Untyped                          ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                          ;
-; CBXI_PARAMETER         ; NOTHING           ; Untyped                          ;
-+------------------------+-------------------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_counter:en_wr_cnt_rtl_1 ;
+; Parameter Settings for Inferred Entity Instance: lpm_counter:en_wr_cnt_rtl_0 ;
 +------------------------+-------------------+---------------------------------+
 ; Parameter Name         ; Value             ; Type                            ;
 +------------------------+-------------------+---------------------------------+
@@ -347,26 +306,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Thu Nov 07 21:41:29 2019
+    Info: Processing started: Thu Nov 14 17:49:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off i2c_try2 -c i2c_try2
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file i2c_try2.v
     Info: Found entity 1: i2c_try2
 Info: Elaborating entity "i2c_try2" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at i2c_try2.v(121): truncated value with size 32 to match size of target (2)
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(156): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(570): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(944): all case item expressions in this case statement are onehot
-Info: Inferred 2 megafunctions from design logic
-    Info: Inferred lpm_counter megafunction (LPM_WIDTH=10) from the following logic: "button_cnt[0]~0"
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(167): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(581): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(955): all case item expressions in this case statement are onehot
+Info: Inferred 1 megafunctions from design logic
     Info: Inferred lpm_counter megafunction (LPM_WIDTH=9) from the following logic: "en_wr_cnt[0]~0"
-Info: Elaborated megafunction instantiation "lpm_counter:button_cnt_rtl_0"
-Info: Instantiated megafunction "lpm_counter:button_cnt_rtl_0" with the following parameter:
-    Info: Parameter "LPM_WIDTH" = "10"
-    Info: Parameter "LPM_DIRECTION" = "UP"
-    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
-Info: Elaborated megafunction instantiation "lpm_counter:en_wr_cnt_rtl_1"
-Info: Instantiated megafunction "lpm_counter:en_wr_cnt_rtl_1" with the following parameter:
+Info: Elaborated megafunction instantiation "lpm_counter:en_wr_cnt_rtl_0"
+Info: Instantiated megafunction "lpm_counter:en_wr_cnt_rtl_0" with the following parameter:
     Info: Parameter "LPM_WIDTH" = "9"
     Info: Parameter "LPM_DIRECTION" = "UP"
     Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
@@ -376,14 +328,16 @@ Info: 5 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "i2c_substate~2" lost all its fanouts during netlist optimizations.
     Info: Register "i2c_substate~3" lost all its fanouts during netlist optimizations.
     Info: Register "i2c_substate~4" lost all its fanouts during netlist optimizations.
-Info: Implemented 61 device resources after synthesis - the final resource count might be different
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "button"
+Info: Implemented 54 device resources after synthesis - the final resource count might be different
     Info: Implemented 4 input pins
-    Info: Implemented 5 output pins
+    Info: Implemented 7 output pins
     Info: Implemented 1 bidirectional pins
-    Info: Implemented 51 macrocells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Implemented 42 macrocells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4415 megabytes
-    Info: Processing ended: Thu Nov 07 21:41:31 2019
+    Info: Processing ended: Thu Nov 14 17:49:53 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

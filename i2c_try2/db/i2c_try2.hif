@@ -293,7 +293,7 @@ ON
 # case_sensitive
 # source_file
 i2c_try2.v
-fcde8cfde3b602b83b8b1c4e0e0579e
+5ad846e131e1c92f62e2819d2d3cc850
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -325,15 +325,15 @@ configure
 PARAMETER_UNSIGNED_BIN
 DEF
 poweron_seq1
-00000001
+00000110
 PARAMETER_UNSIGNED_BIN
 DEF
 poweron_seq2
-00000011
+00000101
 PARAMETER_UNSIGNED_BIN
 DEF
 poweron_seq3
-00000111
+00000011
 PARAMETER_UNSIGNED_BIN
 DEF
 machine_ini

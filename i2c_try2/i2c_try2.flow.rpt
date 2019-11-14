@@ -1,5 +1,5 @@
 Flow report for i2c_try2
-Thu Nov 07 21:41:34 2019
+Thu Nov 14 17:49:56 2019
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Flow Summary                                                         ;
 +---------------------------+------------------------------------------+
-; Flow Status               ; Successful - Thu Nov 07 21:41:34 2019    ;
+; Flow Status               ; Successful - Thu Nov 14 17:49:56 2019    ;
 ; Quartus II 64-Bit Version ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name             ; i2c_try2                                 ;
 ; Top-level Entity Name     ; i2c_try2                                 ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                    ; EPM7128SLC84-15                          ;
 ; Timing Models             ; Final                                    ;
 ; Met timing requirements   ; Yes                                      ;
-; Total macrocells          ; 51 / 128 ( 40 % )                        ;
-; Total pins                ; 14 / 68 ( 21 % )                         ;
+; Total macrocells          ; 42 / 128 ( 33 % )                        ;
+; Total pins                ; 16 / 68 ( 24 % )                         ;
 +---------------------------+------------------------------------------+
 
 
@@ -56,24 +56,25 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/07/2019 21:41:29 ;
+; Start date & time ; 11/14/2019 17:49:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; i2c_try2            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                       ;
-+------------------------------------+----------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                                              ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+----------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 159500910198.157313408905624                       ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                                                 ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                                                  ; --            ; --          ; --             ;
-; MISC_FILE                          ; C:/altera/91/quartus/project/i2c_try2/i2c_try2.dpf ; --            ; --          ; --             ;
-; MISC_FILE                          ; C:/Users/Sherry/Desktop/i2c_try2/i2c_try2.dpf      ; --            ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+----------------------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                  ;
++------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                                         ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 159500910198.157372499100464                                  ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                                            ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/altera/91/quartus/project/i2c_try2/i2c_try2.dpf            ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Sherry/Desktop/i2c_try2/i2c_try2.dpf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Sherry/Desktop/Quartus Project/i2c_try2/i2c_try2.dpf ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                           ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+---------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -81,11 +82,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 4415 MB             ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 4415 MB             ; 00:00:02                           ;
 ; Fitter                  ; 00:00:01     ; 1.0                     ; 4403 MB             ; 00:00:01                           ;
 ; Assembler               ; 00:00:00     ; 1.0                     ; 4362 MB             ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 4341 MB             ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:03                           ;
+; Total                   ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

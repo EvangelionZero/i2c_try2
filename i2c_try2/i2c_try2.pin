@@ -70,7 +70,7 @@ GND+                         : 2         :        :                   :         
 VCCINT                       : 3         : power  :                   : 5.0V    :           :                
 RESERVED                     : 4         :        :                   :         :           :                
 RESERVED                     : 5         :        :                   :         :           :                
-RESERVED                     : 6         :        :                   :         :           :                
+back_from_ack                : 6         : output : TTL               :         :           : N              
 GND                          : 7         : gnd    :                   :         :           :                
 RESERVED                     : 8         :        :                   :         :           :                
 RESERVED                     : 9         :        :                   :         :           :                
@@ -108,7 +108,7 @@ RESERVED                     : 40        :        :                   :         
 RESERVED                     : 41        :        :                   :         :           :                
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-RESERVED                     : 44        :        :                   :         :           :                
+cfged_flag                   : 44        : output : TTL               :         :           : Y              
 led[2]                       : 45        : output : TTL               :         :           : Y              
 RESERVED                     : 46        :        :                   :         :           :                
 GND                          : 47        : gnd    :                   :         :           :                
@@ -118,7 +118,7 @@ led[1]                       : 50        : output : TTL               :         
 button                       : 51        : input  : TTL               :         :           : Y              
 RESERVED                     : 52        :        :                   :         :           :                
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
-back_from_ack                : 54        : output : TTL               :         :           : N              
+over_flag                    : 54        : output : TTL               :         :           : N              
 RESERVED                     : 55        :        :                   :         :           :                
 scl                          : 56        : output : TTL               :         :           : Y              
 sda                          : 57        : bidir  : TTL               :         :           : Y              

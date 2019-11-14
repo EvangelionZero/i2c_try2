@@ -59,3 +59,5 @@ set_global_assignment -name MISC_FILE "C:/Users/Sherry/Desktop/i2c_try2/i2c_try2
 set_location_assignment PIN_49 -to led[0]
 set_location_assignment PIN_50 -to led[1]
 set_location_assignment PIN_45 -to led[2]
+set_global_assignment -name MISC_FILE "C:/Users/Sherry/Desktop/Quartus Project/i2c_try2/i2c_try2.dpf"
+set_location_assignment PIN_44 -to cfged_flag

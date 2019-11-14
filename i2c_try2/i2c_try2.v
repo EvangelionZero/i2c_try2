@@ -1,7 +1,9 @@
-module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
+module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack,over_flag,cfged_flag);
 	input clk,rst,button,en;
 	output scl,back_from_ack;
 	output [2:0]led;
+	output over_flag;
+	output cfged_flag;
 	inout sda;
 	reg [9:0]button_cnt;
 	reg [8:0]en_wr_cnt;
@@ -27,9 +29,9 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 		en_wr_cnt_max=10'd511;
 	parameter //camera poweron sequence (data) parameter
 		configure=8'b00000000,
-		poweron_seq1=8'b00000001,
-		poweron_seq2=8'b00000011,
-		poweron_seq3=8'b00000111;
+		poweron_seq1=8'b00000110,
+		poweron_seq2=8'b00000101,
+		poweron_seq3=8'b00000011;
 	parameter //machine state parameter
 		machine_ini=1'd0,
 		machine_w=1'd1;
@@ -63,23 +65,28 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 		case(seq_cnt)
 			2'd0:
 			begin 
-				data=poweron_seq1;
-				led=3'b001;
+				data=configure;
+				led=3'b111;
 			end
 			2'd1:
 			begin 
 				data=poweron_seq1;
-				led=3'b010;
+				led=3'b011;
 			end
 			2'd2:
 			begin 
-				data=poweron_seq1;
-				led=3'b100;
+				data=poweron_seq2;
+				led=3'b001;
+			end
+			2'd3:
+			begin 
+				data=poweron_seq3;
+				led=3'b000;
 			end
 			default:
 			begin 
-				data=poweron_seq1;
-				led=3'b010;
+				data=poweron_seq3;
+				led=3'b111;
 			end
 		endcase
 	end	
@@ -105,8 +112,8 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 		else
 			en_wr<=0;
 	end
-	
-	always@(posedge clk or posedge rst)
+	//change the data
+	/*always@(posedge clk or posedge rst)
 	begin
 		if(rst)
 		begin
@@ -120,11 +127,11 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 				if(seq_cnt<2'd3)
 					seq_cnt<=seq_cnt+1;
 				else
-					seq_cnt<=0;
+					seq_cnt<=2'd1;
 			end
 			else if(button)
 				button_cnt<=button_cnt+1'b1;
-	end
+	end*/
 	
 	always@(posedge clk or posedge rst) 
 	begin
@@ -135,6 +142,10 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 			over_flag<=1'b0;
 			cfged_flag<=1'b0;
 			back_from_ack<=1'b0;
+			//test
+				seq_cnt<=2'd0;
+			//test end
+			
 		end
 		else
 		begin
@@ -144,9 +155,9 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 					i2c_state<=t_slave_addr;
 					i2c_substate<=start;
 					bit_cycle_cnt<=one;
-					over_flag<=1'b0;
+					//over_flag<=1'b0;
 					link <= 1'b0;
-					if(en_wr)
+					if(!en_wr)
 						machine_state<=machine_w;
 				end
 				machine_w:
@@ -1329,7 +1340,7 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 										three:
 										begin
 											scl <= 1'b1;
-											sda_buf <= 1'b1;
+											sda_buf <= 1'b0;
 											link <= 1'b1;
 											bit_cycle_cnt <= four;
 										end
@@ -1338,18 +1349,24 @@ module i2c_try2(clk,rst,en,button,scl,led,sda,back_from_ack);
 											scl <= 1'b1;
 											sda_buf <= 1'b1;
 											link <= 1'b1;
+											i2c_state<=t_slave_addr;
+											i2c_substate<=start;
 											bit_cycle_cnt <= one;
-											i2c_substate <= first;
-											over_flag<=1'b1;
+											//test
+												if(seq_cnt<2'd3)
+												seq_cnt<=seq_cnt+1'd1;
+												else
+												over_flag<=1'b1;
+											//test end
 											cfged_flag<=1'b1;
 										end
 										default:
 										begin
-											scl <= 1'b0;
+											scl <= 1'b1;
 											sda_buf <= 1'b0;
 											link <= 1'b1;
 											bit_cycle_cnt <= one;
-											i2c_substate <= start;
+											i2c_substate <= stop;
 										end
 									endcase
 								default:machine_state<=machine_ini;

@@ -1,9 +1,9 @@
-Fitter Status : Successful - Thu Nov 07 21:41:32 2019
+Fitter Status : Successful - Thu Nov 14 17:49:54 2019
 Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : i2c_try2
 Top-level Entity Name : i2c_try2
 Family : MAX7000S
 Device : EPM7128SLC84-15
 Timing Models : Final
-Total macrocells : 51 / 128 ( 40 % )
-Total pins : 14 / 68 ( 21 % )
+Total macrocells : 42 / 128 ( 33 % )
+Total pins : 16 / 68 ( 24 % )

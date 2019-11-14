@@ -5,7 +5,7 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.000 ns
+Actual Time    : 14.000 ns
 From           : rst
 To             : sda_buf
 From Clock     : --
@@ -16,7 +16,7 @@ Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
 Actual Time    : 24.000 ns
-From           : seq_cnt[1]
+From           : seq_cnt[0]
 To             : led[0]
 From Clock     : clk
 To Clock       : --
@@ -36,7 +36,7 @@ Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
 Actual Time    : 43.48 MHz ( period = 23.000 ns )
-From           : i2c_substate.state_bit_3
+From           : seq_cnt[0]
 To             : sda_buf
 From Clock     : clk
 To Clock       : clk
