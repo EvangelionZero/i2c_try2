@@ -1,5 +1,5 @@
 Analysis & Synthesis report for i2c_try2
-Thu Nov 14 17:49:53 2019
+Thu Nov 14 20:09:25 2019
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -46,7 +46,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Nov 14 17:49:53 2019    ;
+; Analysis & Synthesis Status ; Successful - Thu Nov 14 20:09:25 2019    ;
 ; Quartus II 64-Bit Version   ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; i2c_try2                                 ;
 ; Top-level Entity Name       ; i2c_try2                                 ;
@@ -248,7 +248,7 @@ Encoding Type:  Minimal Bits
 ; configure      ; 00000000   ; Unsigned Binary                            ;
 ; poweron_seq1   ; 00000110   ; Unsigned Binary                            ;
 ; poweron_seq2   ; 00000101   ; Unsigned Binary                            ;
-; poweron_seq3   ; 00000011   ; Unsigned Binary                            ;
+; poweron_seq3   ; 00000000   ; Unsigned Binary                            ;
 ; machine_ini    ; 0          ; Unsigned Binary                            ;
 ; machine_w      ; 1          ; Unsigned Binary                            ;
 ; t_slave_addr   ; 00         ; Unsigned Binary                            ;
@@ -306,15 +306,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Thu Nov 14 17:49:51 2019
+    Info: Processing started: Thu Nov 14 20:09:23 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off i2c_try2 -c i2c_try2
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file i2c_try2.v
     Info: Found entity 1: i2c_try2
 Info: Elaborating entity "i2c_try2" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(167): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(581): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at i2c_try2.v(955): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(165): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(579): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at i2c_try2.v(953): all case item expressions in this case statement are onehot
 Info: Inferred 1 megafunctions from design logic
     Info: Inferred lpm_counter megafunction (LPM_WIDTH=9) from the following logic: "en_wr_cnt[0]~0"
 Info: Elaborated megafunction instantiation "lpm_counter:en_wr_cnt_rtl_0"
@@ -337,7 +337,7 @@ Info: Implemented 54 device resources after synthesis - the final resource count
     Info: Implemented 42 macrocells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4415 megabytes
-    Info: Processing ended: Thu Nov 14 17:49:53 2019
+    Info: Processing ended: Thu Nov 14 20:09:25 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

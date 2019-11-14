@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for i2c_try2
-Thu Nov 14 17:49:56 2019
+Thu Nov 14 20:09:29 2019
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -117,98 +117,96 @@ applicable agreement for further details.
 ; Slack                                   ; Actual fmax (period)                                ; From                                ; To                                  ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
 +-----------------------------------------+-----------------------------------------------------+-------------------------------------+-------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; cfged_flag~reg0                     ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; machine_state                       ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_substate.state_bit_0            ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
+; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_state.state_bit_1               ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
+; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_state.state_bit_0               ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
+; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; sda_buf                             ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_substate.state_bit_1            ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
+; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; machine_state                       ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_substate.state_bit_2            ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
+; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_substate.state_bit_0            ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_state.state_bit_0               ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_state.state_bit_1               ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; sda_buf                             ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; i2c_substate.state_bit_3            ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; seq_cnt[1]                          ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
 ; N/A                                     ; 43.48 MHz ( period = 23.000 ns )                    ; seq_cnt[0]                          ; sda_buf                             ; clk        ; clk      ; None                        ; None                      ; 18.000 ns               ;
-; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; machine_state                       ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
+; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; machine_state                       ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
-; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; machine_state                       ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
-; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_substate.state_bit_0            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
+; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_state.state_bit_1               ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
+; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_state.state_bit_0               ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_substate.state_bit_1            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
+; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; machine_state                       ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_substate.state_bit_2            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
+; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_substate.state_bit_0            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
-; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_state.state_bit_0               ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
-; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_state.state_bit_1               ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; i2c_substate.state_bit_3            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
 ; N/A                                     ; 66.67 MHz ( period = 15.000 ns )                    ; scl~reg0                            ; scl~reg0                            ; clk        ; clk      ; None                        ; None                      ; 10.000 ns               ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; en_wr                               ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; sda_buf                             ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; sda_buf                             ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; i2c_substate.state_bit_1            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; bit_cycle_cnt.state_bit_0           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; sda_buf                             ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; en_wr                               ; machine_state                       ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; i2c_substate.state_bit_0            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_2            ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_3            ; bit_cycle_cnt.state_bit_1           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; sda_buf                             ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_1            ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; machine_state                       ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_substate.state_bit_0            ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_0               ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; i2c_state.state_bit_1               ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; sda_buf                             ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
 ; N/A                                     ; 71.43 MHz ( period = 14.000 ns )                    ; link                                ; link                                ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[1] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[0] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[7] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[6] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[5] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[4] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[3] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; en_wr                               ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; machine_state                       ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_0            ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_1            ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_2            ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_state.state_bit_1               ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sda_buf                             ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_3            ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[1]                          ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[0]                          ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; over_flag~reg0                      ; over_flag~reg0                      ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_0            ; seq_cnt[1]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; seq_cnt[1]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_3            ; seq_cnt[1]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[1]                          ; seq_cnt[1]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[0]                          ; seq_cnt[1]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_state.state_bit_1               ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_1            ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; machine_state                       ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_2            ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_0            ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_3            ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[1]                          ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; seq_cnt[0]                          ; seq_cnt[0]                          ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; en_wr                               ; lpm_counter:en_wr_cnt_rtl_0|dffs[8] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; over_flag~reg0                      ; lpm_counter:en_wr_cnt_rtl_0|dffs[8] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[8] ; lpm_counter:en_wr_cnt_rtl_0|dffs[8] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
@@ -308,13 +306,15 @@ applicable agreement for further details.
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[4] ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[3] ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; machine_state                       ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_0            ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_2            ; link                                ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_3            ; link                                ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sda_buf                             ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_1            ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_0           ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; machine_state                       ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_2            ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_0            ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; bit_cycle_cnt.state_bit_1           ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
-; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; sda_buf                             ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; N/A                                     ; 76.92 MHz ( period = 13.000 ns )                    ; i2c_substate.state_bit_3            ; back_from_ack~reg0                  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
 ; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                                     ;                                     ;            ;          ;                             ;                           ;                         ;
 +-----------------------------------------+-----------------------------------------------------+-------------------------------------+-------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
@@ -328,8 +328,8 @@ applicable agreement for further details.
 ; N/A   ; None         ; 14.000 ns  ; sda  ; sda_buf                             ; clk      ;
 ; N/A   ; None         ; 14.000 ns  ; rst  ; sda_buf                             ; clk      ;
 ; N/A   ; None         ; 6.000 ns   ; rst  ; scl~reg0                            ; clk      ;
-; N/A   ; None         ; 5.000 ns   ; rst  ; i2c_substate.state_bit_0            ; clk      ;
 ; N/A   ; None         ; 5.000 ns   ; rst  ; i2c_substate.state_bit_1            ; clk      ;
+; N/A   ; None         ; 5.000 ns   ; rst  ; i2c_substate.state_bit_0            ; clk      ;
 ; N/A   ; None         ; 5.000 ns   ; rst  ; bit_cycle_cnt.state_bit_1           ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[8] ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[1] ; clk      ;
@@ -340,10 +340,10 @@ applicable agreement for further details.
 ; N/A   ; None         ; 4.000 ns   ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[4] ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[3] ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; clk      ;
+; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_state.state_bit_1               ; clk      ;
+; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_state.state_bit_0               ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; rst  ; bit_cycle_cnt.state_bit_0           ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_substate.state_bit_2            ; clk      ;
-; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_state.state_bit_0               ; clk      ;
-; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_state.state_bit_1               ; clk      ;
 ; N/A   ; None         ; 4.000 ns   ; rst  ; i2c_substate.state_bit_3            ; clk      ;
 +-------+--------------+------------+------+-------------------------------------+----------+
 
@@ -381,14 +381,14 @@ applicable agreement for further details.
 ; N/A           ; None        ; 4.000 ns  ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[4] ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[3] ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; en   ; lpm_counter:en_wr_cnt_rtl_0|dffs[2] ; clk      ;
-; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_substate.state_bit_0            ; clk      ;
+; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_state.state_bit_1               ; clk      ;
+; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_state.state_bit_0               ; clk      ;
+; N/A           ; None        ; 4.000 ns  ; rst  ; sda_buf                             ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_substate.state_bit_1            ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; bit_cycle_cnt.state_bit_0           ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_substate.state_bit_2            ; clk      ;
+; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_substate.state_bit_0            ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; bit_cycle_cnt.state_bit_1           ; clk      ;
-; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_state.state_bit_0               ; clk      ;
-; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_state.state_bit_1               ; clk      ;
-; N/A           ; None        ; 4.000 ns  ; rst  ; sda_buf                             ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; i2c_substate.state_bit_3            ; clk      ;
 ; N/A           ; None        ; 4.000 ns  ; rst  ; scl~reg0                            ; clk      ;
 ; N/A           ; None        ; -5.000 ns ; sda  ; sda_buf                             ; clk      ;
@@ -401,7 +401,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Classic Timing Analyzer
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Thu Nov 14 17:49:56 2019
+    Info: Processing started: Thu Nov 14 20:09:28 2019
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off i2c_try2 -c i2c_try2
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Started post-fitting delay annotation
@@ -412,15 +412,15 @@ Warning: Found pins functioning as undefined clocks and/or memory enables
 Info: Clock "clk" has Internal fmax of 43.48 MHz between source register "cfged_flag~reg0" and destination register "sda_buf" (period= 23.0 ns)
     Info: + Longest register to register delay is 18.000 ns
         Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC65; Fanout = 4; REG Node = 'cfged_flag~reg0'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 8.000 ns; Loc. = LC89; Fanout = 1; COMB Node = 'sda_buf~21'
-        Info: 3: + IC(0.000 ns) + CELL(2.000 ns) = 10.000 ns; Loc. = LC90; Fanout = 1; COMB Node = 'sda_buf~8'
-        Info: 4: + IC(2.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC88; Fanout = 20; REG Node = 'sda_buf'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 8.000 ns; Loc. = LC68; Fanout = 1; COMB Node = 'sda_buf~20'
+        Info: 3: + IC(0.000 ns) + CELL(2.000 ns) = 10.000 ns; Loc. = LC69; Fanout = 1; COMB Node = 'sda_buf~8'
+        Info: 4: + IC(2.000 ns) + CELL(6.000 ns) = 18.000 ns; Loc. = LC88; Fanout = 19; REG Node = 'sda_buf'
         Info: Total cell delay = 14.000 ns ( 77.78 % )
         Info: Total interconnect delay = 4.000 ns ( 22.22 % )
     Info: - Smallest clock skew is 0.000 ns
         Info: + Shortest clock path from clock "clk" to destination register is 10.000 ns
             Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_63; Fanout = 27; CLK Node = 'clk'
-            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC88; Fanout = 20; REG Node = 'sda_buf'
+            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC88; Fanout = 19; REG Node = 'sda_buf'
             Info: Total cell delay = 8.000 ns ( 80.00 % )
             Info: Total interconnect delay = 2.000 ns ( 20.00 % )
         Info: - Longest clock path from clock "clk" to source register is 10.000 ns
@@ -434,15 +434,15 @@ Info: tsu for register "sda_buf" (data pin = "sda", clock pin = "clk") is 14.000
     Info: + Longest pin to register delay is 20.000 ns
         Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = PIN_57; Fanout = 1; PIN Node = 'sda'
         Info: 2: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = IO88; Fanout = 3; COMB Node = 'sda~0'
-        Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC91; Fanout = 1; COMB Node = 'sda_buf~26'
-        Info: 4: + IC(0.000 ns) + CELL(2.000 ns) = 12.000 ns; Loc. = LC92; Fanout = 1; COMB Node = 'sda_buf~14'
-        Info: 5: + IC(2.000 ns) + CELL(6.000 ns) = 20.000 ns; Loc. = LC88; Fanout = 20; REG Node = 'sda_buf'
+        Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC70; Fanout = 1; COMB Node = 'sda_buf~25'
+        Info: 4: + IC(0.000 ns) + CELL(2.000 ns) = 12.000 ns; Loc. = LC71; Fanout = 1; COMB Node = 'sda_buf~14'
+        Info: 5: + IC(2.000 ns) + CELL(6.000 ns) = 20.000 ns; Loc. = LC88; Fanout = 19; REG Node = 'sda_buf'
         Info: Total cell delay = 16.000 ns ( 80.00 % )
         Info: Total interconnect delay = 4.000 ns ( 20.00 % )
     Info: + Micro setup delay of destination is 4.000 ns
     Info: - Shortest clock path from clock "clk" to destination register is 10.000 ns
         Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_63; Fanout = 27; CLK Node = 'clk'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC88; Fanout = 20; REG Node = 'sda_buf'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC88; Fanout = 19; REG Node = 'sda_buf'
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
 Info: tco from clock "clk" to destination pin "led[2]" through register "seq_cnt[1]" is 24.000 ns
@@ -454,26 +454,26 @@ Info: tco from clock "clk" to destination pin "led[2]" through register "seq_cnt
     Info: + Micro clock to output delay of source is 1.000 ns
     Info: + Longest register to pin delay is 13.000 ns
         Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC75; Fanout = 11; REG Node = 'seq_cnt[1]'
-        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC67; Fanout = 1; COMB Node = 'Decoder0~4'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC67; Fanout = 1; COMB Node = 'Decoder0~3'
         Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_45; Fanout = 0; PIN Node = 'led[2]'
         Info: Total cell delay = 11.000 ns ( 84.62 % )
         Info: Total interconnect delay = 2.000 ns ( 15.38 % )
 Info: th for register "lpm_counter:en_wr_cnt_rtl_0|dffs[8]" (data pin = "en", clock pin = "clk") is 4.000 ns
     Info: + Longest clock path from clock "clk" to destination register is 10.000 ns
         Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_63; Fanout = 27; CLK Node = 'clk'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC69; Fanout = 12; REG Node = 'lpm_counter:en_wr_cnt_rtl_0|dffs[8]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC95; Fanout = 12; REG Node = 'lpm_counter:en_wr_cnt_rtl_0|dffs[8]'
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
     Info: + Micro hold delay of destination is 4.000 ns
     Info: - Shortest pin to register delay is 10.000 ns
         Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_60; Fanout = 9; PIN Node = 'en'
-        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC69; Fanout = 12; REG Node = 'lpm_counter:en_wr_cnt_rtl_0|dffs[8]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC95; Fanout = 12; REG Node = 'lpm_counter:en_wr_cnt_rtl_0|dffs[8]'
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
 Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4360 megabytes
-    Info: Processing ended: Thu Nov 14 17:49:56 2019
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu Nov 14 20:09:29 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
