@@ -1,0 +1,9 @@
+Fitter Status : Successful - Thu Nov 14 21:06:35 2019
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : i2c_try3
+Top-level Entity Name : i2c_try3
+Family : MAX7000S
+Device : EPM7128SLC84-15
+Timing Models : Final
+Total macrocells : 42 / 128 ( 33 % )
+Total pins : 15 / 68 ( 22 % )
